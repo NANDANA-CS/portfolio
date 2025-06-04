@@ -1,13 +1,16 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import { FaHeart, FaCode, FaLightbulb } from 'react-icons/fa';
 
 const About = () => {
+     
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white px-6 py-16">
+    <>
+    
+    <div className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white px-6 py-16 pt-40" id="about" >
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-pink-500">About Me</h2>
+          <h2 className="text-4xl md:text-7xl font-bold text-pink-500">About Me</h2>
           <p className="text-gray-300 mt-2 text-lg">
             Passionate full-stack developer with a love for creating innovative web solutions
           </p>
@@ -15,7 +18,7 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between">
     
-          <div className="w-64 h-64 rounded-full border-4 border-gradient-to-r from-pink-500 to-blue-500 flex items-center justify-center mb-10 md:mb-0">
+          <div className="w-114 h-114 rounded-full border-4 border-gradient-to-r from-pink-500 to-blue-500 flex items-center justify-center mb-10 md:mb-0 mt-20">
             <img
               src="/img/IMG_2505-Photoroom.jpg"
               alt="Profile"
@@ -24,8 +27,8 @@ const About = () => {
           </div>
 
 
-          <div className="md:ml-12 max-w-xl">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Hello! I'm Nandana C S</h3>
+          <div className="md:ml-12 max-w-xl mt-30">
+            <h3 className="text-4xl md:text-5xl font-bold mb-4">Hello! I'm Nandana C S</h3>
             <p className="text-gray-300 text-lg mb-4">
               I'm a passionate MERN Stack Developer who loves turning ideas into beautiful,
               functional web applications. With expertise in MongoDB, Express.js, React, and
@@ -57,6 +60,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

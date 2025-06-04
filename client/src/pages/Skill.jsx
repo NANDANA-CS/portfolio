@@ -1,73 +1,49 @@
 import React from 'react'
-const skillsData = [
-      { name: "MongoDB", icon: "📊", percentage: 85 },
-      { name: "Express.js", icon: "📦", percentage: 80 },
-      { name: "React", icon: "⚛️", percentage: 90 },
-      { name: "Node.js", icon: "🌐", percentage: 85 },
-      { name: "Git", icon: "🔗", percentage: 75 },
-      { name: "REST APIs", icon: "🛠️", percentage: 80 },
-    ];
+import { FaDatabase, FaCodeBranch, FaServer, FaGlobe, FaJs, FaMobileAlt } from 'react-icons/fa'
+import { SiReact, SiNodedotjs } from 'react-icons/si'
+import { BsCodeSlash } from 'react-icons/bs'
 
-    const SkillCard = ({ skill }) => {
-      return (
-        <div className="bg-gray-800 rounded-lg p-4 flex items-center space-x-4">
-          <span className="text-2xl">{skill.icon}</span>
-          <div className="flex-1">
-            <div className="flex justify-between mb-2">
-              <span className="text-lg">{skill.name}</span>
-              <span>{skill.percentage}%</span>
-            </div>
-            <div className="w-full bg-gray-700 rounded-full h-2.5">
-              <div
-                className="h-2.5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"
-                style={{ width: `${skill.percentage}%` }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      );
-    };
+const skills = [
+  { name: 'MongoDB', icon: <FaDatabase />, level: 85 },
+  { name: 'Express.js', icon: <FaServer />, level: 80 },
+  { name: 'React', icon: <SiReact />, level: 90 },
+  { name: 'Node.js', icon: <SiNodedotjs />, level: 85 },
+  { name: 'Git', icon: <FaCodeBranch />, level: 75 },
+  { name: 'REST APIs', icon: <BsCodeSlash />, level: 80 },
+  { name: 'JavaScript', icon: <FaJs />, level: 90 },
+  { name: 'Responsive Design', icon: <FaMobileAlt />, level: 97 }
+]
 
 const Skill = () => {
-    
   return (
-    <>
-      <div className="min-h-screen">
-          {/* Navigation */}
-          {/* <nav className="flex justify-between items-center p-6">
-            <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Nandana C S
-            </h1>
-            <ul className="flex space-x-6">
-              {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className={`hover:text-purple-400 ${item === "Skills" ? "text-purple-400" : ""}`}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <button className="text-xl">🌙</button>
-          </nav> */}
-
-      
-          <div className="flex flex-col items-center mt-10">
-            <h2 className="text-4xl font-bold border-b-4 border-gradient-to-r from-purple-500 to-pink-500 pb-2">
-              Skills & Technologies
-            </h2>
-            <p>Here are the technologies and tools I work with to bring ideas to life</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 max-w-4xl w-full px-6">
-              {skillsData.map((skill, index) => (
-                <SkillCard key={index} skill={skill} />
-              ))}
+    <div className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white px-6 py-20 pt-35" id="skill">
+      <h2 className="text-4xl font-bold text-center mb-12">
+        My Skills
+        <div className="w-24 h-1 bg-pink-500 mx-auto mt-2 rounded-full"></div>
+      </h2>
+      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="bg-[#141414] p-6 rounded-xl shadow-md flex flex-col gap-4 border border-neutral-800"
+          >
+            <div className="flex items-center gap-4 text-lg font-semibold">
+              <div className="text-pink-400 text-2xl bg-[#1f1f1f] p-2 rounded-md">
+                {skill.icon}
+              </div>
+              {skill.name}
             </div>
+            <div className="w-full bg-neutral-800 h-2 rounded-full">
+              <div
+                className="bg-gradient-to-r from-pink-500 to-purple-500 h-2 rounded-full transition-all duration-1000 ease-in-out"
+                style={{ width: `${skill.level}%` }}
+              ></div>
+            </div>
+            <div className="text-right text-sm text-gray-300">{skill.level}%</div>
           </div>
-        </div>
-      
-    </>
+        ))}
+      </div>
+    </div>
   )
 }
 
