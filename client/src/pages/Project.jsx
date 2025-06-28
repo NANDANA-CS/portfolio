@@ -36,7 +36,7 @@ const projects = [
 const Project = () => {
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white px-4 py-50"
+      className="min-h-screen bg-gradient-to-br from-[#2b0a3d] to-[#000000] text-white px-4 py-50"
       id="projects"
     >
       <h2 className="text-4xl md:text-5xl font-bold text-center text-pink-500 mb-4 mt-0">

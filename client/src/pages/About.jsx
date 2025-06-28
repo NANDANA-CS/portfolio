@@ -4,7 +4,7 @@ import { FaHeart, FaCode, FaLightbulb } from 'react-icons/fa';
 const About = () => {
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white px-4 sm:px-6 py-20 pt-32 sm:pt-40"
+      className="min-h-screen bg-gradient-to-br from-[#2b0a3d] to-[#000000] text-white px-4 sm:px-6 py-20 pt-32 sm:pt-40"
       id="about"
     >
       <div className="max-w-7xl mx-auto mt-15">

@@ -4,12 +4,12 @@ import { SiMongodb, SiExpress, SiReact, SiNodedotjs } from 'react-icons/si';
 const Home = () => {
     return (
         <div
-            className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white font-sans pt-40 md:pt-60 px-4"
+            className="min-h-screen bg-gradient-to-br from-[#000000] to-[#2b0a3d] text-white font-sans pt-40 md:pt-60 px-4"
             id="home"
         >
             <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">Hi, I'm</h2>
-                <h1 className="text-pink-500 text-6xl sm:text-7xl md:text-8xl font-extrabold mb-4">Nandana</h1>
+                <h1 className="text-pink-500 text-6xl sm:text-7xl md:text-8xl font-extrabold mb-4 animate-pulse">Nandana</h1>
                 <p className="text-base sm:text-lg md:text-2xl max-w-2xl mb-8 text-gray-300">
                     MERN Stack Developer passionate about creating beautiful, functional web applications
                 </p>

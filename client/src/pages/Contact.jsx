@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-[#1a0933] to-[#0c0b2c] text-white px-6 py-16 flex flex-col items-center pt-40"
+      className="min-h-screen bg-gradient-to-br from-[#000000] to-[#0c0b2c] text-white px-6 py-16 flex flex-col items-center pt-40"
       id="contacts"
     >
       <div className="text-center mb-12 mt-20">
@@ -40,26 +40,26 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-12 w-full max-w-6xl">
-        <div className="bg-[#151e30] p-8 rounded-xl flex-1 shadow-lg">
+      <div className="flex flex-col md:flex-row gap-12 w-lg max-w-6xl">
+        {/* <div className="bg-[#151e30] p-8 rounded-xl flex-1 shadow-lg">
           <h2 className="text-2xl font-semibold mb-6">Send me a message</h2>
           <form className="space-y-6" onSubmit={sendEmail}>
             <input
               type="text"
-              name="name" // Matches {{name}} in template
+              name="name" 
               placeholder="Your Name"
               className="w-full p-3 rounded-md bg-[#1f2a45] text-white border border-purple-500 focus:outline-none"
               required
             />
             <input
               type="email"
-              name="email" // Matches {{email}} in template
+              name="email" 
               placeholder="Your Email"
               className="w-full p-3 rounded-md bg-[#1f2a45] text-white border border-purple-500 focus:outline-none"
               required
             />
             <textarea
-              name="content" // Matches {{content}} in template
+              name="content"
               placeholder="Your Message"
               rows="5"
               className="w-full p-3 rounded-md bg-[#1f2a45] text-white border border-purple-500 focus:outline-none"
@@ -72,7 +72,7 @@ const Contact = () => {
               <span>🚀</span> Send Message
             </button>
           </form>
-        </div>
+        </div> */}
         <div className="flex-1">
           <h2 className="text-2xl font-semibold mb-4">Let's connect!</h2>
           <p className="text-gray-300 mb-8">

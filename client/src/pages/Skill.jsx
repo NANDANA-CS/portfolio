@@ -16,7 +16,7 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0d0d2b] to-[#2b0a3d] text-white px-6 py-20 pt-35" id="skill">
+    <div className="min-h-screen bg-gradient-to-br from-[#000000] to-[#2b0a3d] text-white px-6 py-20 pt-35" id="skill">
       <h2 className="text-4xl font-bold text-center mb-12">
         My Skills
         <div className="w-24 h-1 bg-pink-500 mx-auto mt-2 rounded-full"></div>
